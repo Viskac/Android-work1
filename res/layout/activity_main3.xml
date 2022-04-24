@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="职工登陆后的页面"
+        android:textColor="#ff00"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_w_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="worker_check"
+        android:text="打卡"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_w_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="worker_view"
+        android:text="查看我的打卡记录"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/delete_worker"
+        android:text="删除我的打卡记录"
+        android:textSize="30sp"
+        android:onClick="worker_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/lv_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
